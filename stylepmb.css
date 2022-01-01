@@ -4,6 +4,11 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+.myNav {
+  background-color: rgb(0, 56, 121);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
 ul .btn-light, .btn-light i{
   color: rgb(109, 109, 109);
 }
