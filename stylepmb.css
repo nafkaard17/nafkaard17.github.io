@@ -1,0 +1,210 @@
+/* Top Nav */
+.myNav {
+  background-color: rgb(0, 56, 121);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul .btn-light, .btn-light i{
+  color: rgb(109, 109, 109);
+}
+/* End Top Nav */
+
+/* Card */
+.navbtn{box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);}
+
+.card-body i {
+  font-size: 40px;
+  color: rgb(145, 145, 145);
+}
+
+#container-card{background-color: #fecd0b;}
+
+/* Title Login & Register */
+form #title, #title1, #title2, #title3, #title4{
+  font-family: 'Pacifico', cursive;
+  color: rgb(145, 145, 145);
+}
+
+.modal-header, .modal-footer{
+  border-color: rgb(151, 151, 151);
+}
+.modal-body .accordion-button{
+  background-color: rgb(75, 75, 75);
+  border: 1px solid rgb(105, 105, 105);
+  color: azure;
+}
+
+.accordion-item{
+  border: none;
+}
+
+.accordion-button:focus{
+  box-shadow: 0 0 0 0.25rem rgba(138, 138, 138, 0.25)
+}
+/* End Card */
+
+
+
+/* Back to Top */
+#scrollTop{
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  font-size: 1.4rem;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(0, 56, 121);
+  color: white;
+  transition-duration: 0.2s;
+  z-index: 99999;
+}
+
+#scrollTop:hover{
+  background-color: rgb(0, 70, 150);
+}
+/* End Back to Top */
+
+
+/* Jadwal Daftar */
+.jdwl{
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+/* Mobile */
+#jdwl{
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col .btn{
+  background-color: rgb(66, 248, 50);
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.col .btn:hover{
+  background-color:rgb(20, 235, 0);
+}
+/* End Jadwal Daftar */
+
+/* Modal Hide Content */
+.modal-content{background-color: rgba(73, 73, 73, 0.884); color: rgb(255, 255, 255);}
+
+/* Carousel */
+.carousel-slide{
+  width: 85%;
+  margin: auto;
+}
+
+.carousel-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-slide1{
+  width: 85%;
+  margin: auto;
+}
+
+.prestasiMhs{
+  display: flex;
+  flex-direction: column;
+  margin: auto
+}
+
+.prestasiMhs h2{
+  background-color: rgb(190, 190, 190);
+  margin: auto;
+  padding: 15px;
+  width: 85%;
+  font-size: 20px;
+}
+/* End Carousel */
+
+/* Footer */
+#footer{background-color: rgb(0, 56, 121);}
+/* End Footer */
+
+/* RESPONSIVE BREAKPOINT */
+
+@media (max-width: 767px) {
+
+  .jdwl{
+    display: none;
+  }
+
+  #jdwl{
+    display: block;
+  }
+
+  #container-card{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1, .card2, .card3{
+    margin-left: 10px;
+  }
+
+  footer .w-75{
+    font-size: 12px;
+  }
+  .row, .row-cols-3{
+    justify-content: center;
+  }
+
+  .fw-bolder{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #scrollTop{
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  button .btn-light{
+    margin: 10px 0;
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+  .card1, .card2, .card3{
+    margin-right: 10px;
+  }
+
+  .card .card-body h5{
+    font-size: 16px;
+  }
+
+  .card .card-body i{
+    font-size: 32px;
+  }
+
+  #footer{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1399.98px) {
+
+}

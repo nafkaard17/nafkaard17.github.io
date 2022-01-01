@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PMB Online USM</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="stylepmb.css" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/6cff0bcaf9.js" crossorigin="anonymous"></script>
+    <script src="Script/play.js"></script>
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav id="myNav" class="navbar navbar-expand-lg navbar-dark myNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="indexpmb.html" title="Universitas Semarang">
+          <img src="img/lg_pmb-removebg-preview.png" class="img-fluid" alt="logo" width="200px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <span><i class="fas fa-home"></i></span>
+                <span class="ms-1">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://pmbpasca.usm.ac.id/">
+                <span><i class="fas fa-user-graduate"></i></span>
+                <span class="ms-1">PMB Pasca Sarjana</span>
+              </a>
+            </li>
+            <button type="button" class="btn btn-light border-0 rounded-pill myBtn mx-3 my-1">
+              <a class="text-decoration-none text-reset" href="loginpmb.html">
+                <span><i class="fas fa-sign-in-alt"></i></span>
+                <span>Register / Log in</span>
+              </a>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAV -->
+
+    <!-- Scroll Top -->
+    <button id="scrollTop" onclick="topFunction()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- MAIN -->
+    <main class="container-fluid py-3"> 
+
+      <!-- CARD BUTT0N -->
+      <div id="container-card" class="navbtn container-fluid bg-gradient py-2 d-flex justify-content-around">
+        <div class="card my-3 card1 border-0" style="width: 15rem">
+          <div class="card-body text-center">
+            <span><i class="fas fa-info-circle my-3"></i></span>
+            <h5 id="title1" class="card-title">Info PMB</h5>
+            <button class="btn btn-warning rounded-pill container my-3" type="button" data-bs-toggle="modal" data-bs-target="#infoDftr">Klik di sini</button>
+          </div>
+        </div>
+        <div class="card my-3 card2 border-0" style="width: 15rem">
+          <div class="card-body text-center">
+            <span><i class="fas fa-map-signs my-3"></i></span>
+            <h5 id="title2" class="card-title">Alur Pendaftaran</h5>
+            <button href="#" class="btn btn-warning rounded-pill container my-3" type="button" data-bs-toggle="modal" data-bs-target="#alurDftr">Klik di sini</button>
+          </div>
+        </div>
+        <div class="card my-3 card3 border-0" style="width: 15rem">
+          <div class="card-body text-center">
+            <span><i class="fas fa-wallet my-3"></i></span>
+            <h5 id="title3" class="card-title">Info Pembayaran</h5>
+            <button href="#" class="btn btn-warning rounded-pill container my-3" type="button" data-bs-toggle="modal" data-bs-target="#infoByr">Klik di sini</button>
+          </div>
+        </div>
+        <div class="card my-3 border-0" style="width: 15rem">
+          <div class="card-body text-center">
+            <span><i class="fas fa-hand-holding-usd my-3"></i></span>
+            <h5 id="title4" class="card-title">Biaya Pendidikan</h5>
+            <button href="#" class="btn btn-warning rounded-pill container my-3" type="button" data-bs-toggle="modal" data-bs-target="#biaya">Klik di sini</button>
+          </div>
+        </div>
+      </div>
+      <!-- END CARD BUTTON -->
+
+      <!-- Modal-1 Hide Content Info PMB -->
+      <div class="modal fade" id="infoDftr" tabindex="-1" aria-labelledby="infoDftrLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="infoDftrLabel">Informasi Pendaftaran Mahasiswa Baru USM</h5>
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="isi-info fs-6">
+                    <h6>Program Seleksi Mahasiswa Baru</h6>
+                    <br>
+                    <p>Universitas Semarang membuka pendaftaran bagi siswa kelas XII SMA/MA/SMK atau yang sederajat untuk menjadi mahasiswa USM sesuai dengan program studi yang dipilih. Program seleksi didasarkan pada pencapaian nilai raport kelas X s.d XII (semester 1 s.d 5) yang dimiliki.</p>
+                    <br>
+                    <h6>Jadwal Pendaftaran</h6>
+                    <br>
+                    <ol class="lh-lg">
+                        <li>Pendaftaran : <b>SETIAP HARI</b> sesuai dengan jadwal yang telah ditentukan</li>
+                        <li>Pengumuman : Lolos seleksi berkas akan diumumkan setiap hari</li>
+                        <li>Daftar Ulang : Calon mahasiswa yang lolos berkas, <b>WAJID</b> melakukan Daftar Ulang maksimal <b>7 hari</b> kerja setelah tanggal pengumuman</li>
+                    </ol>
+                    <br>
+                    <p><i class="fs-5">Catatan : Histori tentang pendaftaran calon mahasiswa dapat dilihat pada Dashboard akun masing-masing</i></p>
+                    <br>
+                    <h6>Persyaratan Umum</h6>
+                    <br>
+                    <ol class="lh-lg">
+                        <li>Calon mahasiswa merupakan siswa kelas XII/Lulusan SMU/SMK/MA tau sederajat tanpa batasan tahun lulus</li>
+                        <li>Melengkapi berkas berupa scan nilai (nilai pengetahuan) dari raport asli kelas X s.d XII atau semester 1 sampai dengan semester 5 dalam bentuk file PDF</li>
+                        <li>Melengkapi berkas scan ijazah dan skhun dalam 1 file bentuk PDF (jika sudah memiliki)</li>
+                        <li>Biaya pendaftaran sebesar Rp 100.000 (dibayarkan dengan Virtual Account BNI melalui atm/m-banking/i-banking/sms-banking)</li>
+                        <li>Setiap pendaftar kelas PAGI dapat memilih 2 Program Studi, untuk pendaftar kelas SORE atau KARYAWAN hanya dapat memilih 1 Program Studi</li>
+                    </ol>
+                    <br>
+                    <p><i class="fs-5">Catatan : Pemilih Jurusan S1 Elektro dan S1 Psikologi menyertakan surat keterangan kesehatan buta warna</i></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal-1 -->
+
+      <!-- Modal-2 Hide Content Info Pembayaran -->
+      <div class="modal fade" id="infoByr" tabindex="-1" aria-labelledby="infoByrLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="infoByrLabel">Pembayaran Pendaftaran Mahasiswa Baru</h5>
+              <hr>
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Selain pembayaran secara langsung, pembayaran Pendaftaran Mahasiswa Baru USM bisa dilakukan melalui Virtual Account BNI :</h6>
+              <div class="accordion text-dark" id="myAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      ATM BNI
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                      <strong>Caranya</strong>
+                      <ol>
+                        <li>Masukkan Kartu ATM</li>
+                        <li>Pilih Bahasa “Indonesia” untuk memudahkan bertransaksi</li>
+                        <li>Masukkan PIN dengan benar</li>
+                        <li>Pilih “Menu Lain”</li>
+                        <li>Pilih “Transfer”</li>
+                        <li>Pilih jenis rekening yang akan Anda gunakan Contoh : “Dari Rekening Tabungan”</li>
+                        <li>Pilih “Virtual Account Billing”</li>
+                        <li>Masukkan 16 digit nomor Virtual Account Anda Contoh : 9889384212345678</li>
+                        <li>Tagihan yang harus dibayarkan akan muncul pada layar konfirmasi</li>
+                        <li>Konfirmasi, apabila telah sesuai, lanjutkan transaksi</li>
+                        <li>Transaksi Anda telah selesai</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      M-BANKING BNI
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                      <strong>Caranya</strong>
+                      <ol>
+                        <li>Akses BNI Mobile Banking dari handphone kemudian masukkan user ID dan password</li>
+                        <li>Pilih menu “Transfer”</li>
+                        <li>Pilih menu “Virtual Account Billing” kemudian pilih rekening debet</li>
+                        <li>Masukkan 16 digit nomor Virtual Account Anda
+                          Contoh: 9889384212345678 pada menu “Input Baru”.</li>
+                        <li>Tagihan yang harus dibayarkan akan muncul pada layar konfirmasi</li>
+                        <li>Konfirmasi transaksi dan masukkan password transaksi</li>
+                        <li>Pembayaran Anda telah berhasil</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      TELLER BNI
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                      <strong>Caranya</strong>
+                      <ol>
+                        <li>Kunjungi kantor cabang/outlet BNI terdekat</li>
+                        <li>Informasikan kepada Teller, bahwa ingin melakukan pembayaran “Virtual Account Billing”</li>
+                        <li>Serahkan 16 digit nomor Virtual Account Anda kepada Teller
+                          Contoh: 9889384212345678 pada menu “Input Baru”.</li>
+                        <li>Teller melakukan konfirmasi kepada Anda</li>
+                        <li>Teller memproses transaksi</li>
+                        <li>Apabila transaksi sukses anda akan menerima bukti pembayaran dari teller tersebut</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      ATM BERSAMA
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                      <strong>Caranya</strong>
+                      <ol>
+                        <li>Masukkan Kartu ATM</li>
+                        <li>Masukkan PIN dengan benar</li>
+                        <li>Pilih “Transaksi Lainnya”</li>
+                        <li>Pilih “Transfer”</li>
+                        <li>Pilih “Transfer ke Bank Lain”</li>
+                        <li>Masukkan kode bank BNI (009) dan 16 Digit Nomor Virtual Account
+                          Contoh: 0099889384212345678</li>
+                        <li>Masukkan nominal transfer sesuai tagihan atau kewajiban Anda. Nominal yang berbeda tidak dapat diproses</li>
+                        <li>Konfirmasi rincian Anda akan tampil di layar, cek dan tekan “YA” untuk melanjutkan</li>
+                        <li>Transaksi Berhasil</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal-2 -->
+
+      <!-- Modal-3 Hide Content Biaya Pendidikan -->
+      <div class="modal fade" id="biaya" tabindex="-1" aria-labelledby="biayaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="biayaLabel">Biaya Kuliah di USM</h5>
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Biaya Kuliah Kelas Pagi 
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img class="img-fluid mx-auto d-block" src="img/biaya1.jpeg" alt="biaya-kuliah">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Biaya Kuliah Kelas Sore
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img class="img-fluid mx-auto d-block" src="img/biaya2.jpg" alt="biaya-kuliah">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal-3 -->
+      
+      <!-- Modal-4 Hide Content Alur PMB -->
+      <div class="modal fade" id="alurDftr" tabindex="-1" aria-labelledby="biayaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="biayaLabel">Alur Pendaftaran Mahasiswa Baru USM</h5>
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-light lh-lg">
+              <ol>
+                <li>Buat AKUN terlebih dahulu, tekan tombol <strong>DAFTAR SEKARANG</strong> atau  Daftar Akun di kanan atas</li>
+                <li>Masuk menggunakan AKUN yang telah terdaftar</li>
+                <li>Melengkapi data-data :  Data Pribadi,  Data Orang Tua,  Data Pendidikan,  Nilai Raport</li>
+                <li>Upload berkas Raport dan sertifikat prestasi (jika memiliki) dalam bentuk file PDF</li>
+                <li>Jika data-data sudah lengkap, maka anda dapat mengajukan pendaftaran pada halaman  Dashboard dengan memilih jenis pendaftaran sesuai dengan <strong>Kelas Pagi / Sore</strong> dan pilih <strong>Program Studi</strong>, selanjutnya klik <strong> DAFTAR MAHASISWA BARU</strong></li>
+                <li>Membayar biaya pendaftaran melalui <strong>Virtual Account BNI (masa berlaku Virtual Account 1x24 jam)</strong></li>
+                <li>Verifikasi berkas dan penetapan kelulusan oleh panitia PMB USM</li>
+                <li>Calon mahasiswa yang lolos seleksi akan dihubungi panitia PMB Online USM</li>
+                <li>Calon mahasiswa melaksanakan tes kesehatan buta warna bagi pemilih Pemilih Program Studi S1 Elektro dan S1 Psikologi</li>
+              </ol>
+              <br>
+              <p><em>Catatan :</em><br>
+                <em>* Histori tentang pendaftaran calon mahasiswa dapat dilihat pada  Dashboard akun masing-masing</em><br>
+                <em>* Jika Virtual Account sudah expired silakan reload Virtual Account pada menu Pembayaran</em></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal-4 -->
+
+      <!-- JADWAL DAFTAR -->
+      <div class="container-fluid py-3 my-4 jdwl">
+        <div class="row row-cols-3 gap-4 justify-content-md-center">
+          <div class="col">
+            <h5 class="fw-bolder">PENDAFTARAN KELAS PAGI TAHUN AKADEMIK 2022/2023</h5>
+          </div>
+          <div class="col">
+            <h5 class="fw-bolder">PENDAFTARAN KELAS SORE SEMESTER GENAP TAHUN AKADEMIK 2021/2022</h5>
+          </div>
+          <div class="col col-3 text-center pt-4">
+            <h5 class="fw-bolder">HUBUNGI KAMI</h5>
+          </div>
+          <div class="col">
+            <p>Gelombang I : 8 Oktober 2021 s.d 31 Maret 2022</p>
+            <p>Gelombang II : 1 April 2022 s.d 30 Agustus 2022</p>
+          </div>
+          <div class="col">
+            <p>Gelombang I : 8 Oktober 2021 s.d 28 November 2021</p>
+            <p>Gelombang II : 29 November 2021 s.d 9 Januari 2022</p>
+            <p>Gelombang III : 10 Januari 2022 s.d 20 Februari 2022</p>
+          </div>
+          <div class="col col-3">
+            <div class="d-grid gap-2">
+              <button class="btn rounded-pill" type="button">
+                <a class="text-reset text-decoration-none" href="https://api.whatsapp.com/send?phone=6285640012229">
+                  <i class="fab fa-whatsapp mx-2"></i>Kelas Pagi 1
+                </a>
+              </button>
+              <button class="btn rounded-pill" type="button">
+                <a class="text-reset text-decoration-none" href="https://api.whatsapp.com/send?phone=6281225123775">
+                  <i class="fab fa-whatsapp mx-2"></i>Kelas Pagi 2
+                </a>
+              </button>
+              <button class="btn rounded-pill" type="button">
+                <a class="text-reset text-decoration-none" href="https://api.whatsapp.com/send?phone=6285712329399">
+                  <i class="fab fa-whatsapp mx-2"></i>Kelas Sore
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESPONSIVE JADWAL DAFTAR MOBILE -->
+      <div id="jdwl" class="container my-3 py-3 collapse">
+        <div class="row justify-content-md-center">
+          <div class="col py-2 px-5">
+            <h5 class="fw-bolder py-2">PENDAFTARAN KELAS PAGI TAHUN AKADEMIK 2022/2023</h5>
+            <p>Gelombang I : 8 Oktober 2021 s.d 31 Maret 2022</p>
+            <p>Gelombang II : 1 April 2022 s.d 30 Agustus 2022</p>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col py-2 px-5">
+            <h5 class="fw-bolder py-2">PENDAFTARAN KELAS SORE SEMESTER GENAP TAHUN AKADEMIK 2021/2022</h5>
+            <p>Gelombang I : 8 Oktober 2021 s.d 28 November 2021</p>
+            <p>Gelombang II : 29 November 2021 s.d 9 Januari 2022</p>
+            <p>Gelombang III : 10 Januari 2022 s.d 20 Februari 2022</p>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col py-2 px-5">
+            <h5 class="fw-bolder py-2 text-center">HUBUNGI KAMI</h5>
+            <div class="d-grid gap-2 py-2">
+              <button class="btn rounded-pill" type="button">
+                <a class="text-reset text-decoration-none" href="https://api.whatsapp.com/send?phone=6285640012229">
+                  <i class="fab fa-whatsapp mx-2"></i>Kelas Pagi 1
+                </a>
+              </button>
+              <button class="btn rounded-pill" type="button">
+                <a class="text-reset text-decoration-none" href="https://api.whatsapp.com/send?phone=6281225123775">
+                  <i class="fab fa-whatsapp mx-2"></i>Kelas Pagi 2
+                </a>
+              </button>
+              <button class="btn rounded-pill" type="button">
+                <a class="text-reset text-decoration-none" href="https://api.whatsapp.com/send?phone=6285712329399">
+                  <i class="fab fa-whatsapp mx-2"></i>Kelas Sore
+                </a>
+              </button>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END RESPONSIVE JADWAL DAFTAR MOBILE -->
+      <!-- END JADWAL DAFTAR -->
+
+      <!-- CAROUSEL 1 -->
+      <div class="carousel-container my-4">
+        <div class="carousel-slide">
+            <img src="img/C1.jpeg" alt="">
+            <img src="img/C2.jpeg" alt="">
+            <img src="img/C3.jpg" alt="">
+            <img src="img/C4.jpg" alt="">
+            <img src="img/C5.jpg" alt="">
+        </div>
+    </div>
+    
+    <!-- CAROUSEL 2 -->
+    <div class="prestasiMhs my-4">
+        <h2>Prestasi Mahasiswa USM</h2>
+        <div class="carousel-slide1">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+        </div>
+    </div>
+
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer id="footer" class="container-fluid text-center py-2">
+      <div class="container w-75">
+        <p class="container text-light py-2 my-1">Detail Informasi<br>
+          Gd. USM Information Center, Jl. Soekarno-Hatta Semarang 50196<br>
+          Telp. (024) 670-2757 | HP. 085640012229</p>
+        <div class="container my-3">
+          <button class="btn border-0 rounded-circle bg-warning mx-2">
+            <a class="text-reset" href=""><i class="fab fa-whatsapp"></i></a>
+          </button>
+          <button class="btn border-0 rounded-circle bg-warning mx-2">
+            <a class="text-reset" href=""><i class="fab fa-facebook"></i></a>
+          </button>
+          <button class="btn border-0 rounded-circle bg-warning mx-2">
+            <a class="text-reset" href=""><i class="fab fa-twitter"></i></a>
+          </button>
+          <button class="btn border-0 rounded-circle bg-warning mx-2">
+            <a class="text-reset" href="https://www.instagram.com/usm_jaya/"><i class="fab fa-instagram"></i></a>
+          </button>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Slick JS Carousel Gallery -->
+    <script>
+    $('.carousel-slide').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
+    </script>
+
+    <!-- Slick JS Carousel Prestasi Mahasiswa -->
+    <script>
+    $('.carousel-slide1').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
+    </script>
+  </body>
+</html>
